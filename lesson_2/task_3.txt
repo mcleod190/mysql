@@ -1,0 +1,5 @@
+#run these commands in terminal
+
+mysqldump -uroot example  > dump.sql
+mysql -uroot -e 'CREATE DATABASE sample;'
+mysql -uroot sample < dump.sql
